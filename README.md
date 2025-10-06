@@ -5,3 +5,5 @@ Great, this is your readme file sort of like a doc that describes. To make somet
 Here is a link for that www.markdownguide.org/cheat-sheet
 
 Here is the github pages and a quick guide in setting it up https://docs.github.com/en/pages
+
+Hugo Tempalte: https://docs.hugoblox.com/
