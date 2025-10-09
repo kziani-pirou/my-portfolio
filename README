@@ -1,0 +1,67 @@
+# 🧠 Khaoula Ziani — Personal Portfolio
+
+Welcome to my personal portfolio website, created using **Hugo + HugoBlox Builder** and hosted on **GitHub Pages**.  
+This site highlights my learning journey, skills, and projects as a **cybersecurity student** passionate about technology and digital safety.
+
+---
+
+## 👋 About Me
+
+Hi! I'm **Khaoula Ziani**, a student currently learning and building my skills in cybersecurity, IT systems, and network defense.  
+I’m interested in expanding my technical knowledge while sharing my progress through this personal site.
+
+- 📍 Location: United States  
+- 📧 Email: [kziani@student.ccc.edu](mailto:kziani@student.ccc.edu)  
+- 💼 LinkedIn: [linkedin.com/in/khaoula-ziani-0a846322](https://www.linkedin.com/in/khaoula-ziani-0a846322)  
+
+---
+
+## 🖼️ Profile Picture & Design
+
+My portfolio includes a section for my **profile photo** to make the site more personal.  
+The website is styled with **soft pink accents** for a clean, approachable, and modern look.
+
+![Profile Picture](profile.jpg)  
+*Replace `profile.jpg` with your actual photo file in your repository.*
+
+---
+
+## 💻 Featured Project
+
+### 🛡️ My Portfolio Website
+This website is my first project — a simple and elegant personal portfolio built using **Hugo, HugoBlox, and Tailwind CSS**.  
+
+It includes:  
+- A responsive design with soft pink accents  
+- A section for my profile photo  
+- My contact links and professional summary  
+- Room to add future cybersecurity projects  
+
+---
+
+## 🚀 Technologies Used
+- **Hugo Blox Builder** for static site generation  
+- **Tailwind CSS** for modern styling  
+- **GitHub Pages** for free hosting  
+- **Markdown** and **Go modules** for customization  
+
+---
+
+## 📚 Learning Goals
+As a student, my goals include:  
+- Strengthening my understanding of network security  
+- Practicing ethical hacking techniques safely  
+- Building more web projects using secure design principles  
+- Contributing to open-source cybersecurity tools  
+
+---
+
+## 🌐 How to View the Site
+Once deployed, you can visit my website here:  
+👉 [https://khaoulaziani.github.io/portfolio-site](https://khaoulaziani.github.io/portfolio-site)  
+
+---
+
+## ❤️ Acknowledgment
+Built with 💕 using the open-source **Hugo Blox Builder**.  
+Thanks to the Hugo community for making website creation easy and accessible to students like me.
