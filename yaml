@@ -1,0 +1,94 @@
+# ================================================================
+# Deploy Khaoula Ziani Portfolio Website to GitHub Pages
+# ================================================================
+
+name: Deploy Portfolio Website
+
+env:
+  HUGO_VERSION: '0.150.1'
+  NODE_VERSION: '20'
+
+on:
+  # Trigger when pushing to main branch or manually
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+# Permissions required for GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required for Hugo’s .GitInfo and .Lastmod
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        if: hashFiles('package.json') != ''
+        uses: pnpm/action-setup@v4
+
+      - name: Install Dependencies
+        run: |
+          if [ -f "package.json" ]; then
+            echo "Installing dependencies..."
+            pnpm install || npm install
+          fi
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Cache Hugo Resources
+        uses: actions/cache@v4
+        with:
+          path: resources/
+          key: ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config/**/*', 'hugo.yaml') }}
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Portfolio with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+        run: |
+          echo "Building Khaoula Ziani portfolio..."
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload Artifact for Deployment
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
