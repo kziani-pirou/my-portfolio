@@ -1,0 +1,141 @@
+/* ==========================================================
+   File: style.css
+   Project: Khaoula Ziani Portfolio
+   Author: Dr. Md Ali
+   Version: 1.0
+   Description:
+     External stylesheet for Khaoula Ziani's portfolio website.
+     Includes responsive layout, hover effects, and consistent 
+     pink aesthetic with improved typography.
+   ========================================================== */
+
+/* ---------- General Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Base Styles ---------- */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffe6f0; /* Light pink background */
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: linear-gradient(90deg, #ff66a3, #ff3399);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  background-color: #ff99c2;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffe6f0;
+  transform: scale(1.1);
+}
+
+/* ---------- Sections ---------- */
+section {
+  background: #fff;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #ff3399;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ff66a3;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+/* ---------- Profile Picture ---------- */
+.profile-pic {
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #ff3399;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Contact Links ---------- */
+a {
+  color: #ff3399;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #ff66a3;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
