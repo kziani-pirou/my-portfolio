@@ -1,95 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khaoula Ziani | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+
+  
+  <!-- Header -->
   <header>
-    <div class="container">
-      <nav>
-        <div class="logo">Khaoula Ziani</div>
-        <ul class="nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="container">
+      <h1 class="logo">Khaoula Ziani</h1>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div>
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="container">
       <h2>Hello, I'm Khaoula 💕</h2>
-      <p>A passionate IT student interested in cloud computing, cybersecurity, and web development.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+      <p>Welcome to my very first website! I’m learning how to build and design webpages using HTML, CSS, and a bit of JavaScript.</p>
+      <a href="#projects" class="btn">See My Work</a>
     </div>
   </section>
 
-  <section id="about" class="light-bg">
+  <!-- About Section -->
+  <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>
-        I'm currently studying information technology and working on improving my cloud and programming skills. 
-        I enjoy learning new technologies and building simple, functional projects that make life easier and more creative.
-      </p>
+      <p> I'm currently studying information technology and working on improving my cloud and programming skills. 
+        I enjoy learning new technologies and building simple, functional projects that make life easier and more creative. secure and efficient.</p>
     </div>
   </section>
 
-  <section id="skills">
+  <!-- Skills Section -->
+  <section id="skills" class="light-bg">
     <div class="container">
       <h2>My Skills</h2>
       <div class="skills-grid">
         <div class="skill">
-          <i class="fas fa-cloud"></i>
-          <h3>Cloud Computing</h3>
-          <p>Experience with AWS, Azure, and Google Cloud basics.</p>
-        </div>
-        <div class="skill">
-          <i class="fas fa-shield-alt"></i>
-          <h3>Cybersecurity</h3>
-          <p>Understanding of security best practices and social engineering awareness.</p>
+          <i class="fas fa-desktop"></i>
+          <h3>IT Basics</h3>
+          <p>Networking, troubleshooting, system setup</p>
         </div>
         <div class="skill">
           <i class="fas fa-code"></i>
           <h3>Web Development</h3>
-          <p>HTML, CSS, and basic JavaScript for modern, responsive pages.</p>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-lock"></i>
+          <h3>Cybersecurity</h3>
+          <p>Basic security principles and safe computing</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="light-bg">
+  <!-- Projects Section -->
+  <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="projects">
         <div class="project-card">
-          <h3>Tourism Website – Morocco</h3>
-          <p>A website showing Morocco’s top tourist destinations with images and descriptions.</p>
+          <h3>My First Website</h3>
+          <p>This very website! Built using simple HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>Network Setup</h3>
+          <p>A small project where I configured a local network in a virtual lab.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="light-bg">
     <div class="container">
       <h2>Contact Me</h2>
+      <p>If you’d like to connect or give feedback on my first project, feel free to reach out!</p>
       <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> khaoula.ziani@email.com</p>
-        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-        <p><i class="fas fa-map-marker-alt"></i> United States</p>
+        <p><i class="fas fa-envelope"></i> kziani@student.ccc.edu</p>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Khaoula Ziani | All Rights Reserved</p>
+    <p>© 2025 My First Portfolio</p>
   </footer>
 
-  <!-- Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
