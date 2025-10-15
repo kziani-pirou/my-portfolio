@@ -5,10 +5,11 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* 🌸 Pink Theme Colors */
 :root {
   --primary: #e91e63;     /* main pink */
-  --secondary: #ff80ab;   /* lighter pink for highlights */
-  --light: #fff0f6;       /* very light pink background */
+  --secondary: #ff80ab;   /* lighter pink for hover and accents */
+  --light: #fff0f6;       /* soft pink background */
 }
 
 body {
